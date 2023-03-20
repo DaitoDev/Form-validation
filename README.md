@@ -7,7 +7,7 @@ Screenshots
 Home screen.
 
 
-Home![home](https://user-images.githubusercontent.com/82598098/226219400-1f0237b2-d43e-42dc-b9b9-71aa5aa13733.jpg)
+![home](https://user-images.githubusercontent.com/82598098/226219400-1f0237b2-d43e-42dc-b9b9-71aa5aa13733.jpg)
 
 
 Login screen.
