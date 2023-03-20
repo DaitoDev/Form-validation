@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- Font awesome  -->
+    <script src="https://kit.fontawesome.com/aea30758ce.js" crossorigin="anonymous"></script>
+    <!-- css  -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Hurry</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Wraps content  -->
+        <div class="wrapper">
+
+            <!-- Message appears on success  -->
+            <div class="msg-container success">
+                <p>Your account has been successfully created!</p>
+            </div>
+
+            <!-- Message appears on error  -->
+            <div class="msg-container error">
+                <p>Make sure passwords match.</p>
+            </div>
+
+            <!-- Back button  -->
+            <div class="back">
+                <a href="./logIn.html"><i class="fa-solid fa-angles-left back-btn"></i></a>
+            </div>
+
+            <!-- Aesthic background eclipse  -->
+            <div class="circle"></div>
+
+            <div class="title">
+                <h1>Hurry</h1>
+                <p class="">Create an account.</p>
+            </div>
+            <div class="form-container">
+                <form action="#">
+                    <!-- First Name  -->
+                    <label for="name">Full Name</label>
+                    <input type="name" name="name" id="name" required>
+                    <!-- Email  -->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <!-- Password  -->
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required
+                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="
+                        Password must have atleast 
+                        1 Uppercase character, 
+                        1 Lowercase character, 
+                        1 Number character, 
+                        1 Special character 
+                        Be at least 8 characters long.">
+                    <!-- Confirm Password  -->
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" required
+                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="
+                        Password must have atleast 
+                        1 Uppercase character, 
+                        1 Lowercase character, 
+                        1 Number character, 
+                        1 Special character 
+                        Be at least 8 characters long.">
+                    <!-- TOS  -->
+                    <p>By continuing, you agree to our <a href="#" class="link">Terms of Service</a> and <a href="#"
+                            class="link">Privacy Policy</a>.</p>
+                    <!-- Submit  -->
+                    <button type="submit" class="btn btn-logIn" id="signUp">Sign Up</button>
+                </form>
+            </div>
+            <div class="footer">
+                <p><span class="line"></span> Or continue with <span class="line"></span></p>
+                <div class="icons">
+                    <i class="fa-brands fa-google fa-xl"></i>
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-apple fa-xl"></i>
+                </div>
+                <p>Already have an account? <a href="./logIn.html" class="link">Log in!</a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
